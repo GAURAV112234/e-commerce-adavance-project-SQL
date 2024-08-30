@@ -1,5 +1,6 @@
 use `mavenfuzzyfactory`;
 
+-- 1
 select 
      year(website_sessions.created_at) as yr,
      month(website_sessions.created_at) as mo,
@@ -12,7 +13,7 @@ where website_sessions.created_at < '2012-11-27'
     and website_sessions.utm_source ='gsearch'
     group by 1,2;
     
-    
+  -- 2  
 select 
       year(website_sessions.created_at) as yr,
       month(website_sessions.created_at) as mo,
@@ -29,7 +30,7 @@ where website_sessions.created_at < '2012-11-27'
 group by 1,2;      
       
       
-      
+  -- 3    
   select 
        year(website_sessions.created_at) as yr,
        month(website_sessions.created_at) as mo,
@@ -46,7 +47,7 @@ group by 1,2;
      
   group by 1,2;   
      
-      
+   -- 4   
     select 
          year(website_session.cretaed_at) as yr,
          month(website_sessions.created_at) as mo,
@@ -60,7 +61,7 @@ group by 1,2;
      group by 1,2;
     
       
-      
+    -- 5  
     select 
          year(website_sessions.created_at) as yr,
          quarter(website_sessions.created_at) as qtr,
@@ -73,7 +74,7 @@ group by 1,2;
      order by 1,2;
      
      
-     
+     -- 6
      
 	select 
           year(website_sessions.created_at) as yr,
@@ -88,7 +89,7 @@ group by 1,2;
      order by 1,2 ;
           
           
-      
+      -- 7
       select 
            year(website_sessions.created_at) as yr,
            quarter(website_sessions.created_at) as qtr,
@@ -109,7 +110,7 @@ group by 1,2;
        order by 1,2;
            
            
-     
+     -- 8
      
      select 
           year(created_at) as yr,
